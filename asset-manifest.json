@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/scrabloom/static/css/main.42d1c4a1.css",
+    "main.js": "/scrabloom/static/js/main.eef562d5.js",
+    "static/js/787.d697f22e.chunk.js": "/scrabloom/static/js/787.d697f22e.chunk.js",
+    "index.html": "/scrabloom/index.html",
+    "main.42d1c4a1.css.map": "/scrabloom/static/css/main.42d1c4a1.css.map",
+    "main.eef562d5.js.map": "/scrabloom/static/js/main.eef562d5.js.map",
+    "787.d697f22e.chunk.js.map": "/scrabloom/static/js/787.d697f22e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42d1c4a1.css",
+    "static/js/main.eef562d5.js"
+  ]
+}
