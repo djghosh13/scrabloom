@@ -1,24 +1,28 @@
 import "./App.css";
-import Tile from "./Tile/tile";
+import colors from "./BloomDS/colors";
+import Hand from "./Components/hand";
+import Shop from "./Components/shop";
+import { GameStateProvider, useGameReducer } from "./Game/gameContext";
 
 function App() {
+  const [gameState, gameDispatch] = useGameReducer();
   return (
-    <div className="App">
+    <GameStateProvider state={gameState} dispatch={gameDispatch}>
       <div
         style={{
+          overflow: "hidden",
+          height: "100vh",
+          width: "100%",
           display: "flex",
           flexDirection: "row",
-          alignItems: "center",
-          gap: 8,
+          alignItems: "flex-end",
+          backgroundColor: colors.gray,
         }}
       >
-        {["R", "A", "D"].map((letter) => (
-          <Tile>{letter}</Tile>
-        ))}
-
-        <p>This is scrabloom</p>
+        <Hand />
+        <Shop />
       </div>
-    </div>
+    </GameStateProvider>
   );
 }
 
